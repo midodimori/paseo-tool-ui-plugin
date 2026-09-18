@@ -14,11 +14,13 @@ the card remains mounted.
 
 Requires Paseo 0.8.x on both the daemon and client.
 
-Clone or download this repository, then run from its root directory:
+Install directly from GitHub:
 
 ```sh
-paseo plugin add "$PWD"
+paseo plugin add https://github.com/midodimori/paseo-tool-ui-plugin.git
 ```
+
+Paseo downloads and manages its own copy on the daemon host. No manual clone is needed.
 
 In Paseo's appearance settings, select **Tool call display → Full detail** to
 show individual tool cards.
@@ -48,10 +50,13 @@ may require an update. It registers no custom tool renderer or timeline transfor
 
 ## Develop
 
+For development, clone the repository and run from its root directory:
+
 ```sh
 npm ci
 npm run typecheck
 npm test
+paseo plugin add "$PWD"
 paseo plugin reload paseo-tool-ui-plugin
 ```
 
