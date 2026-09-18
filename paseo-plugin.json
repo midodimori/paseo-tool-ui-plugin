@@ -1,0 +1,6 @@
+{
+  "id": "paseo-tool-ui-plugin",
+  "requirements": {
+    "paseo": "^0.8.0"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "paseo-tool-ui-plugin",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Auto-expand Paseo's native Edit and Write cards on desktop and web",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node tests/auto-expand.mjs"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
