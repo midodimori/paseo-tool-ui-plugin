@@ -12,7 +12,7 @@ the card remains mounted.
 
 ## Install
 
-Requires Paseo 0.8.x on both the daemon and client.
+Requires Paseo with plugin support on both the daemon and client.
 
 Install directly from GitHub:
 
@@ -44,8 +44,8 @@ paseo plugin enable paseo-tool-ui-plugin
   Mobile and narrower layouts keep their usual tool-sheet behavior.
 - Cards can expand again when Paseo unmounts and remounts them, such as during scrolling.
 
-Paseo 0.8 does not expose a native expansion API. The plugin observes the page
-and clicks native tool headers, so changes to Paseo's DOM structure or labels
+The plugin observes the page and clicks native tool headers, so changes to
+Paseo's DOM structure or labels
 may require an update. It registers no custom tool renderer or timeline transformer.
 
 ## Develop
